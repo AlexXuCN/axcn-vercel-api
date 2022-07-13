@@ -20,7 +20,3 @@ module.exports = (req, res) => {
   res.status(200).send(handletext(req.query.text));
 };
 
-//module.exports = (req, res) => {
-//  const { text = 'Hello World' } = req.query
-//  res.send(handletext(text))
-//}
