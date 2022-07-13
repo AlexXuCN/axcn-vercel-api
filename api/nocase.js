@@ -1,6 +1,7 @@
 function getRndInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
 function handletext(t){
   t0 = t.split("")
   t1 = ""
@@ -17,6 +18,6 @@ function handletext(t){
 }
 
 module.exports = (req, res) => {
-  res.status(200).send(handletext(req.query.text));
+  res.status(200).send(getRndInt(1,5));
 };
 
